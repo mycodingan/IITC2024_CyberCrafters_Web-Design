@@ -1,0 +1,210 @@
+/* Navbar with backdrop blur and shadow */
+#navbar {
+    background: rgba(255, 255, 255, 0.3); /* Transparent background */
+    backdrop-filter: blur(10px); /* Backdrop blur */
+    -webkit-backdrop-filter: blur(10px); /* Support for Safari */
+    box-shadow: 0px 4px 10px rgba(255, 165, 0, 0.7); /* Light orange shadow */
+    border-bottom: 1px solid rgba(255, 165, 0, 0.2); /* Light orange border at bottom */
+    transition: all 0.3s ease-in-out;
+    padding: 0 20px; /* Add padding to ensure space at the edges */
+}
+
+/* Container with some padding for content positioning */
+.navbar .container-fluid {
+    max-width: 1200px; /* Limit the max width */
+    margin: 0 auto; /* Center align the container */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Smaller brand text and custom font style */
+.navbar-brand .brand-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff7f00; /* Orange text color */
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* Navbar links styling */
+.navbar-nav .nav-link {
+    color: #ff7f00 !important; /* Orange for the link text */
+    padding: 8px 15px;
+    font-size: 0.9rem; /* Smaller font size */
+    position: relative;
+    overflow: hidden; /* Hide the animated underline initially */
+    transition: color 0.3s ease;
+    margin: 0 10px; /* Space between each link */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #e56700 !important; /* Darker orange on hover */
+}
+
+/* Hover underline gradient animation */
+.navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: -100%; /* Hide it initially */
+    background: linear-gradient(to right, #ff7f00, #ffaf00); /* Gradient orange */
+    transition: all 0.4s ease;
+}
+
+.navbar-nav .nav-link:hover::before {
+    left: 0; /* Animate underline to appear from left to right */
+}
+
+/* Active link */
+.navbar-nav .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: #ffa659 !important;
+}
+
+/* Navbar fixed top with stronger shadow */
+.fixed-top {
+    box-shadow: 0px 4px 15px rgba(255, 165, 0, 0.9);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Custom styling for the body */
+body {
+    background-color: #f7f7f7;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Hamburger icon - orange color */
+.navbar-toggler {
+    border-color: rgba(255, 165, 0, 0.7); /* Orange border for hamburger icon */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 127, 0, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Orange lines for hamburger icon */
+}
+
+/* Centering the menu list when responsive */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        text-align: center; /* Center the menu items */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Stack links vertically in responsive */
+    }
+
+    .navbar-nav .nav-link {
+        margin: 5px 0; /* Space between vertical menu items */
+    }
+}
+
+/* Add padding to the container to avoid content overlapping */
+.container {
+    margin-top: 100px;
+}
+
+/* content */
+
+/* Styling untuk container konten utama */
+.container {
+    font-family: 'Poppins', sans-serif;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #ff7f00; /* Warna orange */
+}
+
+.lead {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.typing-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+    border-left: 4px solid #ff7f00;
+    padding-left: 10px;
+    white-space: pre-wrap;
+}
+
+/* Button orange dengan styling */
+.btn-orange {
+    background-color: #ff7f00;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-orange:hover {
+    background-color: #e56700;
+    color: #fff;
+}
+
+/* Ornamen dekoratif kecil */
+.ornament {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-right: 5px;
+    color: #ff7f00;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Gambar dengan border radius kecil */
+.img-rounded {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Jarak antara navbar dan konten */
+.container {
+    margin-top: 100px;
+}
+.typing-text {
+    display: none; /* Teks disembunyikan secara default */
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.typing-text.active {
+    display: block; /* Teks ditampilkan jika aktif */
+}
+
+.typing-text .label {
+    font-weight: bold;
+    color: #FF6600; /* Warna orange untuk label */
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.typing-text .label::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    border-right: 2px solid #FF6600;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #FF6600; }
+}
