@@ -102,28 +102,29 @@ body {
 
 /* Add padding to the container to avoid content overlapping */
 .container {
-    margin-top: 100px;
+    margin-top: 100px; /* Space below the navbar */
 }
 
-/* content */
-
-/* Styling untuk container konten utama */
+/* Styling for main content container */
 .container {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Title styling */
 .title {
     font-size: 2.5rem;
     font-weight: 600;
-    color: #ff7f00; /* Warna orange */
+    color: #ff7f00; /* Orange color */
 }
 
+/* Lead text styling */
 .lead {
     font-size: 1.2rem;
     margin-bottom: 20px;
     color: #333;
 }
 
+/* Typing text styling */
 .typing-text {
     font-size: 1rem;
     color: #555;
@@ -131,9 +132,34 @@ body {
     border-left: 4px solid #ff7f00;
     padding-left: 10px;
     white-space: pre-wrap;
+    display: none; /* Hidden by default */
 }
 
-/* Button orange dengan styling */
+.typing-text.active {
+    display: block; /* Display when active */
+}
+
+.typing-text .label {
+    font-weight: bold;
+    color: #FF6600; /* Orange for label */
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.typing-text .label::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    border-right: 2px solid #FF6600;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #FF6600; }
+}
+
+/* Button styling */
 .btn-orange {
     background-color: #ff7f00;
     color: #fff;
@@ -149,7 +175,7 @@ body {
     color: #fff;
 }
 
-/* Ornamen dekoratif kecil */
+/* Decorative ornaments */
 .ornament {
     display: inline-block;
     font-size: 1.5rem;
@@ -167,44 +193,115 @@ body {
     }
 }
 
-/* Gambar dengan border radius kecil */
+/* Image styling with border radius */
 .img-rounded {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Jarak antara navbar dan konten */
-.container {
-    margin-top: 100px;
+/* About Section styling */
+.about-section {
+    background-color: #ffffff;
+    border-top: 1px solid #ffa500;
+    border-bottom: 1px solid #ffa500;
+    padding: 60px 0;
 }
-.typing-text {
-    display: none; /* Teks disembunyikan secara default */
-    font-family: 'Roboto', sans-serif;
+
+.about-title {
+    color: #ff6600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center; /* Center title */
+}
+
+.about-info {
+    font-family: 'Poppins', sans-serif;
+    color: #333;    
+    text-align: center; /* Center text */
+}
+
+.about-info p.lead {
     font-size: 18px;
-    line-height: 1.6;
-    color: #333;
+    margin-bottom: 20px;
 }
 
-.typing-text.active {
-    display: block; /* Teks ditampilkan jika aktif */
+/* Main Image styling */
+.about-images {
+    position: relative;
 }
 
-.typing-text .label {
-    font-weight: bold;
-    color: #FF6600; /* Warna orange untuk label */
-    display: inline-block;
-    margin-right: 5px;
+.about-main-img {
+    width: calc(100% + 50px); /* Increase width slightly to accommodate small images */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-left: -25px; /* Adjust to keep image centered */
 }
 
-.typing-text .label::after {
-    content: "";
-    display: inline-block;
-    width: 0;
-    border-right: 2px solid #FF6600;
-    animation: blink-caret 0.75s step-end infinite;
+.about-extra-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
 }
 
-@keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: #FF6600; }
+.about-extra-images img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+}
+
+/* Positioning Small Images */
+.about-extra-images .img1 {
+    bottom: -25px;
+    left: -25px;
+}
+
+.about-extra-images .img2 {
+    top: -25px;
+    right: -25px;
+}
+
+.about-extra-images .img3 {
+    bottom: -25px;
+    left: -25px;
+}
+
+.about-extra-images .img4 {
+    bottom: -25px;
+    right: -25px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .content-image {
+        display: none;
+    }
+
+    /* Adjustments for About Section on small screens */
+    .about-title {
+        font-size: 1.8rem; /* Smaller title font */
+    }
+
+    .about-info {
+        font-size: 1rem; /* Smaller font size for info */
+        margin-top: 20px;
+    }
+
+    /* Adjusting the main image size and positioning */
+    .about-main-img {
+        width: calc(100% + 30px);
+        margin-left: -15px;
+    }
+
+    .about-extra-images img {
+        width: 80px;
+    }
 }

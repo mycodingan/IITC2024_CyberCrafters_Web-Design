@@ -2,103 +2,799 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CyberCrafters</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InnoHub - We're available for marketing</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-    <!-- AOS (Animate on Scroll) CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
 </head>
 
-<body>
+<body id="top">
 
-    <!-- Navbar -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light shadow-sm py-2">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./asset/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-                <span class="brand-text">CyberCrafters</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Provit</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <!-- 
+    - #HEADER
+  -->
 
-    <!-- Main Content -->
-    <div class="container my-5">
-        <div class="row align-items-center">
-            <!-- Tulisan di sebelah kiri -->
-            <div class="col-md-6" data-aos="fade-up">
-                <h1 class="title">Selamat Datang di CyberCrafters</h1>
-                <p class="lead">Manfaat, tujuan, dan visi misi kami adalah untuk memberikan solusi kreatif melalui
-                    teknologi
-                    digital yang inovatif.</p>
-                    <p id="typingText1" class="typing-text">Tujuan: Mengembangkan aplikasi berbasis teknologi untuk meningkatkan produktivitas.</p>
-                    <p id="typingText2" class="typing-text">Visi: Menjadi penyedia solusi teknologi yang handal.</p>
-                    <p id="typingText3" class="typing-text">Misi: Memberikan layanan teknologi terbaik bagi masyarakat.</p>
-                    
-                <a href="#about" class="btn btn-orange">Belajar Lebih Lanjut</a>
-                <!-- Ornamen kecil -->
-                <span class="ornament">✨</span>
-                <span class="ornament">🚀</span>
-            </div>
+  <header class="header" data-header>
+    <div class="container">
 
-            <!-- Gambar di sebelah kanan -->
-            <div class="col-md-6 text-center" data-aos="fade-up" data-aos-delay="200">
-                <img src="https://via.placeholder.com/400x300" alt="CyberCrafters" class="img-fluid img-rounded">
-            </div>
-        </div>
+      <a href="#" class="logo">CyberCrafters</a>
+
+      <nav class="navbar container" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#service" class="navbar-link" data-nav-link>Services</a>
+          </li>
+
+          <li>
+            <a href="#project" class="navbar-link" data-nav-link>Galeri</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+
+
+        </ul>
+      </nav>
+
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" class="open"></ion-icon>
+        <ion-icon name="close-outline" class="close"></ion-icon>
+      </button>
+
     </div>
+  </header>
 
 
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <!-- Custom JS -->
-    <script src="main.js"></script>
-    <script src="index.js"></script>
 
 
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="hero">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">CyberCrafters - Digital Entrepreneurship</p>
+
+            <h1 class="h1 hero-title">Empowering Entrepreneurs Through Digital Solutions</h1>
+
+            <p class="hero-text">
+              Dalam era transformasi digital, kami hadir untuk membantu wirausahawan memanfaatkan teknologi digital
+              guna mencapai kesuksesan dalam bisnis. Dari strategi pemasaran hingga pengembangan digital yang
+              terintegrasi, kami siap mendukung perjalanan bisnis Anda.
+            </p>
+
+            <a href="#" class="btn btn-primary">Mulai Sekarang</a>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.png" width="720" height="673" alt="hero banner" class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <!-- 
+  - #SERVICE
+-->
+
+      <section class="section service" id="service" aria-label="service">
+        <div class="container">
+
+          <h2 class="h2 section-title">Layanan Kami</h2>
+
+          <p class="section-text">
+            Kami menawarkan berbagai layanan digital yang dirancang khusus untuk mendukung wirausahawan dalam mencapai
+            tujuan bisnis mereka. Dengan solusi inovatif dan strategi digital yang terintegrasi, kami siap membantu Anda
+            mengatasi tantangan dan memanfaatkan peluang di era digital.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon" style="background-color: #13c4a1">
+                  <ion-icon name="chatbox"></ion-icon>
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Optimasi SEO</a>
+                </h3>
+
+                <p class="card-text">
+                  Memastikan bisnis Anda mendapatkan visibilitas maksimum di mesin pencari dengan strategi SEO yang
+                  efektif
+                  dan sesuai dengan kebutuhan pasar Anda.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon" style="background-color: #6610f2">
+                  <ion-icon name="desktop"></ion-icon>
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Pemasaran Digital</a>
+                </h3>
+
+                <p class="card-text">
+                  Mengembangkan kampanye pemasaran digital yang kuat untuk menjangkau audiens target Anda melalui
+                  berbagai
+                  saluran online.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon" style="background-color: #ffb700">
+                  <ion-icon name="bulb"></ion-icon>
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Riset Pasar</a>
+                </h3>
+
+                <p class="card-text">
+                  Mengumpulkan dan menganalisis data pasar untuk memberikan wawasan berharga yang membantu Anda membuat
+                  keputusan
+                  bisnis yang lebih baik.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon" style="background-color: #fc3549">
+                  <ion-icon name="phone-portrait"></ion-icon>
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Penargetan Kata Kunci</a>
+                </h3>
+
+                <p class="card-text">
+                  Mengoptimalkan strategi pemasaran Anda dengan penargetan kata kunci yang tepat untuk meningkatkan
+                  relevansi
+                  dan konversi.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon" style="background-color: #00d280">
+                  <ion-icon name="archive"></ion-icon>
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Pemasaran Email</a>
+                </h3>
+
+                <p class="card-text">
+                  Membangun hubungan yang lebih baik dengan pelanggan melalui kampanye email yang dirancang untuk
+                  meningkatkan
+                  keterlibatan dan loyalitas.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon" style="background-color: #ff612f">
+                  <ion-icon name="build"></ion-icon>
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Pemasaran & Pelaporan</a>
+                </h3>
+
+                <p class="card-text">
+                  Memantau dan menganalisis kinerja pemasaran Anda dengan pelaporan yang mendetail untuk memastikan
+                  strategi
+                  Anda mencapai hasil yang diinginkan.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+      <!-- 
+  - #PROJECT
+-->
+
+      <section class="section project" id="project" aria-label="project">
+        <div class="container">
+
+          <h2 class="h2 section-title">Galeri Terbaru Kami</h2>
+
+          <p class="section-text">
+            Temukan karya terbaru kami di galeri ini, menampilkan berbagai proyek yang telah kami kerjakan. Dari
+            pemasaran digital hingga pengembangan aplikasi, kami berdedikasi untuk memberikan hasil yang terbaik.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 510; --height: 700;">
+                  <img src="./assets/images/project-1.jpeg" width="510" height="700" loading="lazy"
+                    alt="Mengoptimalkan SEO untuk startup" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <p class="card-subtitle">Optimasi SEO</p>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Mengoptimalkan SEO untuk startup</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 510; --height: 700;">
+                  <img src="./assets/images/project-2.jpeg" width="510" height="700" loading="lazy"
+                    alt="Strategi pemasaran digital untuk e-commerce" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <p class="card-subtitle">Pemasaran Digital</p>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Strategi pemasaran digital untuk e-commerce</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 510; --height: 700;">
+                  <img src="./assets/images/project-3.jpeg" width="510" height="700" loading="lazy"
+                    alt="Penargetan kata kunci untuk aplikasi mobile" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <p class="card-subtitle">Penargetan Kata Kunci</p>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Penargetan kata kunci untuk aplikasi mobile</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 510; --height: 700;">
+                  <img src="./assets/images/project-4.jpeg" width="510" height="700" loading="lazy"
+                    alt="Kampanye pemasaran email untuk startup teknologi" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <p class="card-subtitle">Pemasaran Email</p>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Kampanye pemasaran email untuk startup teknologi</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 510; --height: 700;">
+                  <img src="./assets/images/project-5.jpg" width="510" height="700" loading="lazy"
+                    alt="Pelaporan pemasaran untuk bisnis kecil" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <p class="card-subtitle">Pemasaran & Pelaporan</p>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Pelaporan pemasaran untuk bisnis kecil</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 510; --height: 700;">
+                  <img src="./assets/images/project-6.jpg" width="510" height="700" loading="lazy"
+                    alt="Redesign aplikasi untuk pengalaman pengguna yang lebih baik" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <p class="card-subtitle">Pengembangan</p>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Redesign aplikasi untuk pengalaman pengguna yang lebih baik</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+      <!-- 
+  - #ABOUT
+-->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <div class="about-banner img-holder" style="--width: 720; --height: 960;">
+            <img src="./assets/images/about-banner.jpeg" width="720" height="960" loading="lazy" alt="about banner"
+              class="img-cover">
+
+            <button class="play-btn" aria-label="Play video">
+              <ion-icon name="play" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title">Tentang Kami</h2>
+
+            <p class="section-text">
+              Kami adalah mitra digital Anda yang berdedikasi untuk membawa inovasi dan teknologi ke dalam bisnis Anda.
+              Menggabungkan pengalaman, keahlian, dan pendekatan berbasis data, kami membantu wirausahawan dan
+              perusahaan untuk
+              tumbuh lebih cepat, lebih cerdas, dan lebih efisien di era digital ini.
+            </p>
+
+            <h3 class="h3">Siapa Kami</h3>
+
+            <p class="section-text">
+              CyberCrafters adalah tim profesional yang berfokus pada transformasi digital untuk bisnis. Dengan
+              kombinasi antara
+              teknologi mutakhir dan strategi pemasaran yang terukur, kami menyediakan solusi inovatif yang dirancang
+              untuk
+              mempercepat pertumbuhan bisnis Anda.
+            </p>
+
+            <h3 class="h3">Pencapaian Kami</h3>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+                <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+
+                <p class="section-text">
+                  Membantu lebih dari 500 bisnis memaksimalkan kehadiran digital mereka dengan strategi SEO yang
+                  terbukti
+                  efektif.
+                </p>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+
+                <p class="section-text">
+                  Mengembangkan kampanye pemasaran digital dengan tingkat konversi yang lebih tinggi dibandingkan metode
+                  tradisional.
+                </p>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+
+                <p class="section-text">
+                  Membangun platform digital yang mampu meningkatkan pengalaman pengguna dan mendukung pertumbuhan
+                  bisnis
+                  secara signifikan.
+                </p>
+              </li>
+
+            </ul>
+
+            <h3 class="h3">Misi Kami</h3>
+
+            <p class="section-text">
+              Misi kami adalah memampukan wirausahawan untuk mencapai potensi penuh mereka melalui penggunaan teknologi
+              digital. Kami percaya bahwa inovasi harus dapat diakses oleh semua bisnis, dan kami berkomitmen untuk
+              membantu
+              mereka menavigasi dunia digital dengan solusi yang terukur, dapat diandalkan, dan disesuaikan dengan
+              kebutuhan
+              unik mereka.
+            </p>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- 
+  - #CTA
+-->
+
+      <section class="section cta" aria-label="cta" style="background-image: url('./assets/images/cta-bg.jpg')">
+        <div class="container">
+
+          <p class="cta-subtitle">Apa Langkah Selanjutnya?</p>
+
+          <h2 class="h2 section-title">Sudah Siap untuk Mulai? Mari Kita Wujudkan Bersama!</h2>
+
+          <a href="#" class="btn btn-secondary">Mulai Sekarang</a>
+
+        </div>
+      </section>
+      <!-- 
+  - #BLOG
+-->
+
+      <section class="section blog" id="blog" aria-label="blog">
+        <div class="container">
+
+          <h2 class="h2 section-title">Artikel Terbaru Diperbarui Setiap Minggu</h2>
+
+          <p class="section-text">
+            Baca artikel terbaru tentang berbagai topik menarik yang akan memperkaya wawasan Anda. Artikel-artikel ini
+            diperbarui setiap minggu.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 860; --height: 646;">
+                  <img src="./assets/images/blog-1.jpEg" width="860" height="646" loading="lazy"
+                    alt="Cara Menjadi UX Designer Pemula yang Sukses" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <time class="time" datetime="2024-06-16">16 Juni 2024</time>
+
+                  <h3 class="h3">
+                    <a href="https://www.dicoding.com/blog/7-langkah-menjadi-ui-ux-designer/" target="_blank" class="card-title">Cara Menjadi UX Designer Pemula yang Sukses</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card grid">
+
+                <figure class="card-banner img-holder" style="--width: 860; --height: 646;">
+                  <img src="./assets/images/blog-2.jpg" width="860" height="646" loading="lazy"
+                    alt="Sukses SEO Lokal 2024: Tahun Keberhasilan di Mana-mana" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <time class="time" datetime="2024-06-16">16 Juni 2024</time>
+
+                  <h3 class="h3">
+                    <a href="https://www.holt.digital/blog/seo-trends-in-2024 #" target="_blank" class="card-title">Sukses SEO Lokal 2024: Tahun Keberhasilan di Mana-mana</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card grid">
+
+                <figure class="card-banner img-holder" style="--width: 860; --height: 646;">
+                  <img src="./assets/images/blog-3.jpg" width="860" height="646" loading="lazy"
+                    alt="Panduan Menjalankan Proses Penemuan Klien" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <time class="time" datetime="2024-06-16">16 Juni 2024</time>
+
+                  <h3 class="h3">
+                    <a href="https://luisazhou.com/blog/get-clients/" class="card-title">Panduan Menjalankan Proses Penemuan Klien</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card grid">
+
+                <figure class="card-banner img-holder" style="--width: 860; --height: 646;">
+                  <img src="./assets/images/blog-4.jpg" width="860" height="646" loading="lazy"
+                    alt="3 Cara Mendapatkan Persetujuan Klien untuk Perubahan Lingkup Pekerjaan" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <time class="time" datetime="2024-06-16">16 Juni 2024</time>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">3 Cara Mendapatkan Persetujuan Klien untuk Perubahan Lingkup
+                      Pekerjaan</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card grid">
+
+                <figure class="card-banner img-holder" style="--width: 860; --height: 646;">
+                  <img src="./assets/images/blog-5.jpg" width="860" height="646" loading="lazy"
+                    alt="21 Blog Wajib Baca untuk Agensi Kreatif di 2024" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <time class="time" datetime="2024-06-16">16 Juni 2024</time>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">21 Blog Wajib Baca untuk Agensi Kreatif di 2024</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact" id="contact" aria-label="contact">
+        <div class="container">
+
+          <h2 class="h2 section-title">Let's Contact With Us</h2>
+
+          <p class="section-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna
+            aliqua.
+          </p>
+
+          <form action="" class="contact-form">
+
+            <div class="input-wrapper">
+              <input type="text" name="name" aria-label="name" placeholder="Your name*" required class="input-field">
+
+              <input type="email" name="email_address" aria-label="email" placeholder="Email address*" required
+                class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <input type="text" name="subject" aria-label="subject" placeholder="Subject" class="input-field">
+
+              <input type="number" name="phone" aria-label="phone" placeholder="Phone number" class="input-field">
+            </div>
+
+            <textarea name="message" aria-label="message" placeholder="Your message...*" required
+              class="input-field"></textarea>
+
+            <div class="checkbox-wrapper">
+              <input type="checkbox" name="terms_and_policy" id="terms" required class="checkbox">
+
+              <label for="terms" class="label">
+                Accept <a href="#" class="label-link">Terms of Services</a> and <a href="#" class="label-link">Privacy
+                  Policy</a>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+
+          </form>
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+              <div class="contact-card">
+
+                <div class="card-icon">
+                  <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Mail Here</h3>
+
+                  <a href="mailto:hello@luaz.com" class="card-link">hello@luaz.com</a>
+                  <a href="mailto:info@luaz.com" class="card-link">info@luaz.com</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="contact-card">
+
+                <div class="card-icon">
+                  <ion-icon name="map-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Visit Here</h3>
+
+                  <address class="card-address">
+                    27 Division St, New York,<br>
+                    NY 10002, USA
+                  </address>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="contact-card">
+
+                <div class="card-icon">
+                  <ion-icon name="headset-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Call Here</h3>
+
+                  <a href="tel:+1234567890" class="card-link">+123 456 7890</a>
+                  <a href="tel:+2414524526" class="card-link">+241 452 4526</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="copyright">
+        &copy; 2022 All Rights Reserved by <a href="#" class="copyright-link">codewithsadee</a>
+      </p>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" aria-label="back to top" data-back-top-btn class="back-top-btn">
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
