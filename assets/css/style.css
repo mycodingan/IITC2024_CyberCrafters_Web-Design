@@ -8,8 +8,8 @@
 
   --safety-orange: hsl(25, 100%, 50%);
   --lavender-gray: hsl(230, 19%, 81%);
-  --persian-rose: hsl(328, 100%, 59%);
-  --red-crayola: hsl(341, 100%, 49%);
+  --persian-rose: hsla(25, 100%, 59%, 0.567);
+  --red-crayola: hsl(23, 100%, 70%);
   --eerie-black: hsl(240, 6%, 10%);
   --light-gray: hsl(0, 0%, 80%);
   --cultured-2: hsl(210, 60%, 98%);
